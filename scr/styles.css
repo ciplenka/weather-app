@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(218, 253, 250);
+}
+.card {
+  max-width: 700px;
+
+  background-color: rgb(248, 223, 248);
+  display: block;
+}
+h1 {
+  color: rgb(12, 34, 238);
+  text-align: center;
+  font-family: "Rubik Distressed", cursive;
+}
+.newCity {
+  color: rgb(5, 16, 107);
+  text-align: center;
+  font-family: "Rubik Distressed", cursive;
+  font-size: 15px;
+}
+#city,
+.search {
+  font-size: 70%;
+}
+.search {
+  background-color: rgb(255, 136, 0);
+  font-family: "Rubik Distressed", cursive;
+}
+#current-button {
+  background-color: rgb(12, 34, 238);
+  font-family: "Rubik Distressed", cursive;
+  font-size: 70%;
+}
+button:hover {
+  color: #fff;
+  background: #885df1;
+}
+.search:hover {
+  background-color: rgb(12, 34, 238);
+}
+.fa-cloud-sun {
+  font-size: 100px;
+  color: rgb(255, 136, 0);
+}
+.fa-sun,
+.fa-cloud-sun-rain,
+.fa-cloud-showers-heavy,
+.fa-cloud {
+  font-size: 40px;
+}
+.fa-sun-1,
+.fa-cloud-sun-rain-1,
+.fa-cloud-showers-heavy-1,
+.fa-cloud-1 {
+  font-size: 30px;
+}
+.fa-sun-1,
+.fa-sun,
+.fa-cloud-sun-rain,
+.fa-cloud-sun-rain-1 {
+  color: rgb(252, 193, 84);
+}
+.fa-cloud-showers-heavy-1,
+.fa-cloud-1,
+.fa-cloud-showers-heavy,
+.fa-cloud {
+  color: rgb(118, 208, 235);
+}
+.mainTemperature {
+  font-family: "Rubik Distressed", cursive;
+  position: absolute;
+  left: 25%;
+  margin: -5px;
+  font-size: 30px;
+}
+.dailyTemperature {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.myCity {
+  position: absolute;
+  left: 25%;
+  margin: 25px;
+  font-size: 20px;
+}
+.country {
+  font-family: monospace;
+  position: absolute;
+  left: 21%;
+  margin: 50px;
+  font-size: 10px;
+}
+.time {
+  position: absolute;
+  margin: 0;
+  right: 10px;
+  top: 0;
+  font-family: "Rubik Distressed", cursive;
+}
+.todayDate {
+  position: absolute;
+  margin: 0;
+  right: 10px;
+  top: 17px;
+  font-size: 10px;
+  font-family: monospace;
+}
+.dayNight {
+  list-style: none;
+  position: absolute;
+  left: 24%;
+  margin: -32px;
+  font-size: 10px;
+  font-family: monospace;
+  text-align: right;
+}
+.windy {
+  list-style: none;
+  position: absolute;
+  right: 10%;
+  margin: -45px;
+  font-size: 10px;
+  font-family: monospace;
+  text-align: right;
+}
+.timeday {
+  font-size: 20px;
+  font-family: monospace;
+}
+.everyday,
+.myCity {
+  font-family: "Rubik Maze", cursive;
+}

@@ -5,6 +5,7 @@ section {
   max-width: 800px;
   display: block;
   background-image: url(https://static.make.ua/catalog/18/sky-0000001__1345909184__615.jpg);
+  background-size: cover;
 }
 
 h1 {

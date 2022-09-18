@@ -1,13 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 section {
   background-color: rgb(141, 252, 241);
+  width: 100%;
+  height: 100%;
 }
 .card {
-  max-width: 800px;
-  display: block;
   background-image: url(https://static.make.ua/catalog/18/sky-0000001__1345909184__615.jpg);
   background-size: cover;
+  margin: auto;
 }
-
+html {
+  height: 110%;
+}
 h1 {
   color: rgb(12, 34, 238);
   text-align: center;

@@ -1,137 +1,141 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>WeatherAPP</title>
-    <meta charset="UTF-8" />
-    <link href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<title>WeatherAPP</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="src/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Maze&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/e9b75e3c8b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-      <div class="container">
-        <div class="card" style="width: 42rem;" >
-          <div class="card-body">
-            <i class="fa-solid fa-location-dot"></i><span class = "location"> Kyiv</span>     <form id="search-form">
-              <input type="text"
-                      placeholder="Enter your city"
-                      id="search-city"
-                      required
-                      autofocus="yes"
-                    />
-                    <input type="submit" value="Search" class="search" /></form>
-                    <div>
-                    <button id="current-button" value="My location" />My location</div>
-                    <br />
-                  <i class="fa-solid fa-cloud-sun"></i>
-                  <span class="mainTemperature">22°C</span>
-                  <span class="myCity">Kyiv</span>
-                  <span class="country">Ukraine</span>
-                  <span class="time"></span>
-                  <span class="todayDate"></span>
-                      <ul class="dayNight">
-                        <li class = "dayMax">Day | 28°C</li>
-                          <li class ="dayMin">Night | 20°C</li>
-                      </ul>
-                      <ul class="windy">
-                          <li id = "precipitation">Precipitation: 5%</li>
-                              <li id = "humidity">Humidity: 66%</li>
-                                  <li id= "wind"> Wind: 16 km/h</li>
-                              </ul>
-                              <h1>Today</h1>
-                              <h1 class="newCity"></h1>
-                              <div class="card today shadow-lg bg-light rounded" style="width: 40rem">
-                                  <div class="card-body">
-                                    <div class="container text-center">
-                                      <div class="row forecast-body">
-                                        <div class="col">
-                                          <div class="shadow-sm mb-5 bg-white rounded">
-                                            <p class="timeday">10:00 </p>
-                                            <i class="fa-solid fa-cloud fa-cloud-1"></i>                      <p class="dailyTemperature">24˚</p>
-                                          </div>
-                                        </div>
-                                        <div class="col">
-                                          <div class="shadow-sm mb-5 bg-white rounded">
-                                              <p class="timeday"> 11:00 </p>
-                                            <i class="fa-solid fa-cloud fa-cloud-1"></i>                       <p class="dailyTemperature">25˚</p>
-                                          </div>
-                                        </div>
-                                        <div class="col">
-                                          <div class="shadow-sm mb-5 bg-white rounded">
-                                              <p class="timeday"> 12:00</p> 
-                                            <i class="fa-solid fa-sun fa-sun-1"></i>                      <p class="dailyTemperature">25˚</p>
-                                          </div>
-                                        </div>
-                                        <div class="col">
-                                          <div class="shadow-sm mb-5 bg-white rounded">
-                                              <p class="timeday">  13:00 </p>
-                                            <i class="fa-solid fa-sun fa-sun-1"></i>                      <p class="dailyTemperature">26˚</p>
-                                          </div>
-                                        </div>
-                                        <div class="col">
-                                          <div class="shadow-sm mb-5 bg-white rounded">
-                                              <p class="timeday">   14:00</p> 
-                                            <i class="fa-solid fa-cloud-showers-heavy fa-cloud-showers-heavy-1"></i>                      <p class="dailyTemperature">27˚</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              <h1>
-                                  Weekly</h1>
-          <div class="card weekly shadow-lg bg-light rounded" style="width: 40rem">
-            <div class="card-body">
-              <div class="container text-center">
-                <div class="row forecast-body">
-                  <div class="col">
-                    <div class="p-2 bg-white border rounded shadow-sm">
-                        <i class="fa-solid fa-cloud"></i> <p class="everyday"> Monday </p>
-                     <p class="dailyTemperature">24˚|18˚</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="p-2 bg-white border rounded shadow-sm">
-                        <i class="fa-solid fa-sun"></i> <p class="everyday"> Tuesday </p>
-                     <p class="dailyTemperature">29˚|22˚</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="p-2 bg-white border rounded shadow-sm">
-                        <i class="fa-solid fa-sun"></i> <p class="everyday">Wednesday </p>
-                      <p class="dailyTemperature">31˚|23˚</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="p-2 bg-white border rounded shadow-sm">
-                        <i class="fa-solid fa-cloud-sun-rain"></i>    <p class="everyday">Thursday </p>
-                     <p class="dailyTemperature">26˚|17˚</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="p-2 bg-white border rounded shadow-sm">
-                        <i class="fa-solid fa-cloud-showers-heavy"></i> 
-                        <p class="everyday"> Friday </p>
-                    <p class="dailyTemperature">24˚|15˚</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    <script src="src/index.js"></script>
+<script
+src="https://kit.fontawesome.com/e9b75e3c8b.js"
+crossorigin="anonymous"
+></script>
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+crossorigin="anonymous"
+/>
+</head>
+<body>
+    <section>
+<div class="container">
+<div class="card" style="width: 42rem;" >
+<div class="card-body">
+<i class="fa-solid fa-location-dot"></i><span class = "location"> Kyiv</span>     <form id="search-form">
+<input type="text"
+placeholder="Enter your city"
+id="search-city"
+required
+autofocus="yes"
+/>
+<input type="submit" value="Search" class="search" /></form>
+<div>
+<button id="current-button" value="My location">My location</button></div>
+<br />
+<i class="fa-solid fa-cloud-sun"></i>
+<span class="mainTemperature">22°C</span>
+<span class="myCity">Kyiv</span>
+<span class="country">Ukraine</span>
+<span class="time"></span>
+<span class="todayDate"></span>
+<ul class="dayNight">
+<li class = "dayMax">Day | 28°C</li>
+<li class ="dayMin">Night | 20°C</li>
+</ul>
+<ul class="windy">
+<li id = "precipitation">Precipitation: 5%</li>
+<li id = "humidity">Humidity: 66%</li>
+<li id= "wind"> Wind: 16 km/h</li>
+</ul>
+<h1>Today</h1>
+<h1 class="newCity"></h1>
+<div class="card today shadow-lg bg-light rounded" style="width: 40rem">
+<div class="card-body">
+<div class="container text-center">
+<div class="row forecast-body">
+<div class="col">
+<div class="shadow-sm mb-5 bg-white rounded">
+<p class="timeday">10:00 </p>
+<i class="fa-solid fa-cloud fa-cloud-1"></i>                      <p class="dailyTemperature">24˚</p>
+</div>
+</div>
+<div class="col">
+<div class="shadow-sm mb-5 bg-white rounded">
+<p class="timeday"> 11:00 </p>
+<i class="fa-solid fa-cloud fa-cloud-1"></i>                       <p class="dailyTemperature">25˚</p>
+</div>
+</div>
+<div class="col">
+<div class="shadow-sm mb-5 bg-white rounded">
+<p class="timeday"> 12:00</p> 
+<i class="fa-solid fa-sun fa-sun-1"></i>                      <p class="dailyTemperature">25˚</p>
+</div>
+</div>
+<div class="col">
+<div class="shadow-sm mb-5 bg-white rounded">
+<p class="timeday">  13:00 </p>
+<i class="fa-solid fa-sun fa-sun-1"></i>                      <p class="dailyTemperature">26˚</p>
+</div>
+</div>
+<div class="col">
+<div class="shadow-sm mb-5 bg-white rounded">
+<p class="timeday">   14:00</p> 
+<i class="fa-solid fa-cloud-showers-heavy fa-cloud-showers-heavy-1"></i>                      <p class="dailyTemperature">27˚</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1>
+Weekly</h1>
+<div class="card weekly shadow-lg bg-light rounded" style="width: 40rem">
+<div class="card-body">
+<div class="container text-center">
+<div class="row forecast-body">
+<div class="col">
+<div class="p-2 bg-white border rounded shadow-sm">
+<i class="fa-solid fa-cloud"></i> <p class="everyday"> Monday </p>
+<p class="dailyTemperature">24˚|18˚</p>
+</div>
+</div>
+<div class="col">
+<div class="p-2 bg-white border rounded shadow-sm">
+<i class="fa-solid fa-sun"></i> <p class="everyday"> Tuesday </p>
+<p class="dailyTemperature">29˚|22˚</p>
+</div>
+</div>
+<div class="col">
+<div class="p-2 bg-white border rounded shadow-sm">
+<i class="fa-solid fa-sun"></i> <p class="everyday">Wednesday </p>
+<p class="dailyTemperature">31˚|23˚</p>
+</div>
+</div>
+<div class="col">
+<div class="p-2 bg-white border rounded shadow-sm">
+<i class="fa-solid fa-cloud-sun-rain"></i>    <p class="everyday">Thursday </p>
+<p class="dailyTemperature">26˚|17˚</p>
+</div>
+</div>
+<div class="col">
+<div class="p-2 bg-white border rounded shadow-sm">
+<i class="fa-solid fa-cloud-showers-heavy"></i> 
+<p class="everyday"> Friday </p>
+<p class="dailyTemperature">24˚|15˚</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="src/index.js"></script>
   </body>
 </html>

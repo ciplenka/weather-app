@@ -1,12 +1,12 @@
-body {
-  background-color: rgb(218, 253, 250);
+section {
+  background-color: rgb(141, 252, 241);
 }
 .card {
-  max-width: 700px;
-
-  background-color: rgb(248, 223, 248);
+  max-width: 800px;
   display: block;
+  background-image: url(https://static.make.ua/catalog/18/sky-0000001__1345909184__615.jpg);
 }
+
 h1 {
   color: rgb(12, 34, 238);
   text-align: center;

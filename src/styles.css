@@ -5,7 +5,7 @@ body {
   height: 100%;
 }
 section {
-  background-color: rgb(141, 252, 241);
+  background-color: rgb(252, 250, 235);
   width: 100%;
   height: 100%;
 }
@@ -15,7 +15,7 @@ section {
   margin: auto;
 }
 html {
-  height: 110%;
+  height: 115%;
 }
 h1 {
   color: rgb(12, 34, 238);
@@ -140,4 +140,8 @@ button:hover {
 .everyday,
 .myCity {
   font-family: "Rubik Maze", cursive;
+}
+.linkSource {
+  font-family: "Rubik Maze", cursive;
+  text-align: center;
 }

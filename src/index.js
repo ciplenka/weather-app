@@ -6,6 +6,12 @@ let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();
 let year = now.getFullYear();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let precipitation = document.querySelector("#precipitation");
 let humidity = document.querySelector("#humidity");
 let wind = document.querySelector("#wind");
@@ -45,7 +51,6 @@ time.innerHTML = `${hours}:${minutes}`;
 todayDate.innerHTML = `${day} ${month} ${date}, ${year}`;
 
 function getWeather(response) {
-  console.log(response);
   let cityElement = document.querySelector(".myCity");
   cityElement.innerHTML = response.data.name;
   let cityElement1 = document.querySelector(".location");

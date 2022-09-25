@@ -61,7 +61,8 @@ button:hover {
 .fa-sun-1,
 .fa-cloud-sun-rain-1,
 .fa-cloud-showers-heavy-1,
-.fa-cloud-1 {
+.fa-cloud-1,
+#icon {
   font-size: 30px;
 }
 .fa-sun-1,
@@ -80,8 +81,14 @@ button:hover {
   font-family: "Rubik Distressed", cursive;
   position: absolute;
   left: 25%;
-  margin: -5px;
-  font-size: 30px;
+  margin: -20px;
+  font-size: 45px;
+}
+.weatherDesc {
+  font-family: "Rubik Distressed", cursive;
+  position: absolute;
+  font-size: 15px;
+  left: 2%;
 }
 .dailyTemperature {
   font-size: 25px;

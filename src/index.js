@@ -59,6 +59,8 @@ function getWeather(response) {
   let country = document.querySelector(".country");
   country.innerHTML = response.data.sys.country;
   let temperature = document.querySelector(".mainTemperature");
+  let weatherDesc = document.querySelector(".weatherDesc");
+  weatherDesc.innerHTML = response.data.weather[0].description;
   let temp = Math.round(response.data.main.temp);
   temperature.innerHTML = `${temp}°C`;
   precipitation.innerHTML = `Precipitation: ${response.data.main.temp}%`;

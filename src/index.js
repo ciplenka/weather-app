@@ -16,7 +16,8 @@ let precipitation = document.querySelector("#precipitation");
 let humidity = document.querySelector("#humidity");
 let wind = document.querySelector("#wind");
 let currentButton = document.querySelector("#current-button");
-let apiKey = "ff19773665825f3257a251f0f13e66cd";
+let apiKey = "62231151ce343c4d68652e1617efc22f";
+// my owm key (let apiKey = "ff19773665825f3257a251f0f13e66cd";)
 let dayMax = document.querySelector(".dayMax");
 let dayMin = document.querySelector(".dayMin");
 
@@ -89,7 +90,7 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 function search1(city) {
-  let apiKey = "ff19773665825f3257a251f0f13e66cd";
+  let apiKey = "62231151ce343c4d68652e1617efc22f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(getWeather);
 }
@@ -98,7 +99,7 @@ search1("Kyiv");
 function showCurrentLocation(position) {
   console.log(position.coords.latitude);
   console.log(position.coords.longitude);
-  let apiKey = "ff19773665825f3257a251f0f13e66cd";
+  let apiKey = "62231151ce343c4d68652e1617efc22f";
 
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
